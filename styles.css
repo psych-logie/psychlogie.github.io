@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Navbar Styles */
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Logo Image */
+  .logo-img {
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between logo and text */
+    width: 50px; /* Adjust size as needed */
+   /*  height: 100px; Ensures it remains a perfect circle */
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover; /* Ensures it fits well inside the circle */
+  }
+  
+  /* Navigation Links */
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 20px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  /* Home Section with Background Image */
+.home-section {
+    padding: 100px 0;
+    background-image: url('images/banner1.png'); /* Update with your image name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Transparent White Background for Text */
+  .highlight-text {
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block; /* Ensures the background wraps around the text */
+  }
+  
+  .highlight-text p.lead {
+    color: #333; /* Dark text for better contrast */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .home-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .home-section p.lead {
+    font-size: 1.25rem;
+    color: hwb(240 1% 95%);
+  }
+  
+ /* About Us Section */
+.about-section {
+    padding: 80px 0; /* Reduced padding */
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  .about-section h2 {
+    font-size: 2rem; /* Smaller heading */
+    font-weight: bold;
+    margin-bottom: 30px; /* Reduced margin */
+  }
+  
+  .about-section h3 {
+    font-size: 1.75rem; /* Smaller heading */
+    font-weight: bold;
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .about-section h4 {
+    font-size: 1.5rem; /* Smaller heading */
+    font-weight: bold;
+    margin-top: 20px; /* Reduced margin */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .about-section p {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.6; /* Tighter line height */
+    color: #555;
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-section ul li {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.6; /* Tighter line height */
+    color: #555;
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .about-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensures the image is responsive */
+  }
+  
+  /* Smaller Image */
+  .smaller-image {
+    max-width: 200px; /* Smaller image */
+    height: auto;
+  }
+  
+  /* Smaller Text Class */
+  .small-text {
+    font-size: 0.95rem; /* Smaller text */
+    line-height: 1.6; /* Tighter line height */
+  }
+  
+  /* Services Section with Background Image */
+.services-section {
+    padding: 100px 0;
+    background-image: url('images/services-bg2.avif'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  /* Transparent Overlay */
+  .services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    z-index: 1;
+  }
+  
+  /* Ensure Content is Above the Overlay */
+  .services-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Card Styles */
+  .services-section .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .services-section .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services-section .card-body {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+  }
+
+  /* Special Offer Section */
+.special-offer-section {
+    padding: 80px 0; /* Reduced padding */
+  }
+  
+  .special-offer-section h2 {
+    font-size: 2rem; /* Smaller heading */
+    font-weight: bold;
+    margin-bottom: 30px; /* Reduced margin */
+  }
+  
+  .special-offer-section h3 {
+    font-size: 1.75rem; /* Smaller heading */
+    font-weight: bold;
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .special-offer-section p {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.6; /* Tighter line height */
+    color: #555;
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .special-offer-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .special-offer-section ul li {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.6; /* Tighter line height */
+    color: #555;
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .special-offer-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensures the image is responsive */
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 100px 0;
+  }
+  
+  .contact-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+  }
