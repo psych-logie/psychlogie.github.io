@@ -23,9 +23,9 @@ body {
 
   /* Logo Image */
   .logo-img {
-    height: 50px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
     margin-right: 10px; /* Space between logo and text */
-    width: 50px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
    /*  height: 100px; Ensures it remains a perfect circle */
     border-radius: 50%; /* Makes it round */
     object-fit: cover; /* Ensures it fits well inside the circle */
