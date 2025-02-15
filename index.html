@@ -217,6 +217,22 @@
     </div>
   </section>
 
+  <script>
+    function toggleTitle() {
+        const titleElement = document.querySelector('title');
+        const currentTitle = titleElement.innerHTML;
+
+        // Check if "Psych Logie" is in the title
+        if (currentTitle.includes("Psych Logie")) {
+            // Hide "Psych Logie"
+            titleElement.innerHTML = '<img src="images/logo.png" class="logo-img">';
+        } else {
+            // Display "Psych Logie"
+            titleElement.innerHTML = '<img src="images/logo.png" class="logo-img"> Psych Logie';
+        }
+    }
+  </script>
+
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2023 Psych Logie. All rights reserved.</p>
