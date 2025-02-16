@@ -43,14 +43,13 @@ body {
   }
   /* Home Section with Background Image */
 .home-section {
-    padding: 100px 0;
-    background-image: url('images/banner1.png'); /* Update with your image name */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+  padding: 100px 0;
+  background-image: url('images/home-bg.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
   
   /* Transparent White Background for Text */
   .highlight-text {
