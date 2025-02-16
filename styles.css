@@ -180,6 +180,29 @@ body {
     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     border-radius: 10px;
   }
+.services-section {
+  padding: 100px 0;
+  background-image: url('images/services-bg.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  z-index: 1;
+}
+
+.services-section .container {
+  position: relative;
+  z-index: 2;
+}
 
   /* Special Offer Section */
 .special-offer-section {
@@ -234,6 +257,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+
   
   /* Footer */
   footer {
