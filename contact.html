@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Psych Logie</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-banner {
+      background-image: url('images/Get-in-touch_2.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    }
+    .page-banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .page-banner .container {
+      position: relative;
+      z-index: 1;
+    }
+    .page-banner h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    .page-banner p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+    .contact-form-section {
+      padding: 60px 20px;
+      background: #f9fbfe;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">Psych Logie</h1>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>        
+              <li class="dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown-menu">
+                  
+                  <!-- Sub-dropdown for Research Services -->
+                  <li class="sub-dropdown">
+                    <a href="#">Research Services</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Research Design</a></li>
+                      <li><a href="#">Data Collection</a></li>
+                      <li><a href="#">Data Analysis</a></li>
+                      <li><a href="#">Writing & Editing</a></li>
+                      <li><a href="#">Proofreading</a></li>
+                      <li><a href="#">Formatting & Styling</a></li>
+                      <li><a href="#">Plagiarism Checking</a></li>
+                    </ul>
+                  </li>
+              
+                  <!-- Sub-dropdown for Publication -->
+                  <li class="sub-dropdown">
+                    <a href="#">Publication & Presentation</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Content Writing</a></li>
+                      <li><a href="#">Data Visualization</a></li>
+                      <li><a href="#">Publication Support</a></li>
+                      <li><a href="#">Research Paper Presentation</a></li>
+                    </ul>
+                  </li>
+              
+                </ul>
+              </li>          
+              </li>          
+              <li><a href="#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>        
+          </nav>    
+        </div>
+      </header>
+
+
+  <section class="page-banner">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Whether you have a question about our services, pricing, or anything else — our team is ready to answer all your questions.</p>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Psych Logie</h2>
+        <p>Supporting academic research & mental wellness — one step at a time.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><img src="icons/icons8-facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="icons/icons8-twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="icons/icons8-linkedin.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="icons/icons8-mail.svg" alt="Mail"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Psych Logie. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    for (let i = 0; i < 15; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 50 + 'px';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.animationDelay = (Math.random() * 3) + 's';
+      document.querySelector('.header').appendChild(star);
+    }
+  </script>
+</body>
+</html>

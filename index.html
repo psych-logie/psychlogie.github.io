@@ -3,221 +3,259 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psych Logie</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <title>Psych Logie - Academic & Research Support</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar with Logo -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="header">
     <div class="container">
-      <!-- Logo and Website Name -->
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.jpg" alt="Psych Logie Logo" class="logo-img"> Psych Logie
-      </a>
-      <!-- Toggle Button for Mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+      <h1 class="logo">Psych Logie</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>        
+          <li class="dropdown">
+            <a href="services.html">Services</a>
+            <ul class="dropdown-menu">
+              
+              <!-- Sub-dropdown for Research Services -->
+              <li class="sub-dropdown">
+                <a href="#">Research Services</a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="#">Research Design</a></li>
+                  <li><a href="#">Data Collection</a></li>
+                  <li><a href="#">Data Analysis</a></li>
+                  <li><a href="#">Writing & Editing</a></li>
+                  <li><a href="#">Proofreading</a></li>
+                  <li><a href="#">Formatting & Styling</a></li>
+                  <li><a href="#">Plagiarism Checking</a></li>
+                </ul>
+              </li>
+          
+              <!-- Sub-dropdown for Publication -->
+              <li class="sub-dropdown">
+                <a href="#">Publication & Presentation</a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="#">Content Writing</a></li>
+                  <li><a href="#">Data Visualization</a></li>
+                  <li><a href="#">Publication Support</a></li>
+                  <li><a href="#">Research Paper Presentation</a></li>
+                </ul>
+              </li>
+          
+            </ul>
+          </li>          
+          </li>          
+          <li><a href="#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>        
+      </nav>    
+    </div>
+  </header>
+
+  <!-- <section class="hero">
+    <div class="container">
+      <h2 class="fade-in">Institute of Advanced Psychological Research and Services</h2>
+      <p class="fade-in">
+        Bridging academic excellence with psychological insight through personalized research support and counseling consultation.
+      </p>      
+      <a href="#services" class="btn fade-in">Get Started</a>
+      <div class="scroll-down fade-in">↓</div>
+    </div>
+  </section> -->
+
+  <section class="hero-slider">
+    <div class="slide active" style="background-image: url('images/hero-banner.jpg');">
+      <div class="container">
+        <h2>Institute of Advanced Psychological Research and Services</h2>
+        <p>Empowering academic and personal growth through research guidance and mental health support.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/hero-banner2.jpg');">
+      <div class="container">
+        <h2>Complete Research Assistance</h2>
+        <p>From thesis strategy to data analysis — we’ve got your academic journey covered.</p>
+        <a href="#services" class="btn">Explore Services</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/hero-banner3.jpg');">
+      <div class="container">
+        <h2>Counseling & Consultation</h2>
+        <p>Because mental clarity is key to productivity. Let’s heal and grow together.</p>
+        <a href="#contact" class="btn">Book a Session</a>
+      </div>
+
+    </div>
+    <div class="slider-nav">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </section>
+  
+  <script>
+  let slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  const showSlide = (index) => {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  };
+
+  document.getElementById('prev').addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  document.getElementById('next').addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 5000);
+
+</script>
+
+
+  <section class="intro">
+    <div class="container">
+      <div class="intro-box">
+        <div class="intro-icon">
+          <img src="images/brain-icon2.png" alt="Research Support Icon">
+        </div>
+        <h3>Welcome to Psych Logie</h3>
+        <p class="left-align">
+          We are here to make academic and professional life easier. Whether you're working on a thesis, collecting valuable data, or looking for support in managing stress — Psych Logie has your back. We offer end-to-end guidance from formulating research strategy, collecting and analyzing data, to final thesis presentation — all with a personalized approach.
+        </p>
+        <p class="left-align">
+          Our team works closely with UG, PG, and PhD students, as well as working professionals, ensuring every need is met with care, confidentiality, and expertise. With services that blend academic mentorship and psychological consultation, you’re never alone in your journey — be it academic pressure, data hurdles, or personal challenges.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="services" class="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4>Data Extraction</h4>
+          <p>Efficiently extract and organize your research data from multiple sources.</p>
+        </div>
+        <div class="service-card">
+          <h4>Survey Strategy</h4>
+          <p>We help design targeted surveys using tools like Google Forms, tailored for your study goals.</p>
+        </div>
+        <div class="service-card">
+          <h4>Data Analysis</h4>
+          <p>Professional analysis support for SPSS, Excel, Python, and other tools.</p>
+        </div>
+        <div class="service-card">
+          <h4>Report Creation</h4>
+          <p>Clear and impactful academic reports and visual dashboards to present your findings.</p>
+        </div>
+        <div class="service-card">
+          <h4>Thesis Presentation</h4>
+          <p>We help you prepare compelling and well-structured thesis presentations for academic success.</p>
+        </div>
+        <div class="service-card">
+          <h4>Data Collection</h4>
+          <p>End-to-end assistance in collecting accurate and reliable data for your research from the right participants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about" class="about">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>At Psych Logie, we specialize in offering streamlined data collection and research support solutions for students and professionals alike. Our approach is grounded in precision — gathering critical academic and behavioral data using structured ETL techniques from both digital and physical sources. With a focus on quality and relevance, we cater to a wide range of fields including psychology, healthcare, education, media, and finance.</p>
+      <p>In an age where data plays a crucial role in driving insights and innovation, our mission is to empower researchers with the right tools and guidance to complete their academic work with confidence. We bring together industry expertise and academic rigor to ensure your research journey is smooth, insightful, and successful.</p>
+    </div>
+  </section>
+  
+
+  <section id="feedback" class="feedback">
+    <div class="container">
+      <h3>Feedback</h3>
+      <div class="feedback-container">
+        <div class="feedback-card">
+          <p>"I'm Mohammed Hussain from Indira Gandhi National University, and I'm grateful for the support provided for my research on mental health professionals. The data collection services were instrumental in connecting me with the right participants, which was crucial for my study.</p>
+          <p>Thank you for your assistance and support in helping me achieve my research objectives."</p>
+          <p><strong>- Mohammed Hussain, PhD Scholar, IGNOU</strong></p>
+        </div>
+        <div class="feedback-card">
+          <p>"Heartfelt thanks to the data collection team! As a PhD researcher from Sri Ramachandra Medical College and Research Institute, Chennai, I was struggling to find participants for my study on PCOD. Your services were a game-changer, connecting me with the right individuals and helping me gather valuable data. Your support was invaluable, and I'm truly grateful."</p>
+          <p><strong>- Selvaraj, PhD Researcher, Sri Ramachandra Medical College</strong></p>
+        </div>
+        <div class="feedback-card">
+          <p>"Hi, I am Arjun Deepak, Research Scholar at MIT World Peace University, Pune. I am extremely satisfied with the data collection services provided for my research study on 'Experiences of Solitude and Substance Use: The Moderating Role of Personal Resilience'. The team was professional, efficient, and ensured that the data collected was of high quality. Their support was instrumental in helping me meet my research objectives, and I appreciate the timely completion of the project. 
+  
+  Thank you for your exceptional service and support throughout my research journey."</p>
+          <p><strong>- Arjun Deepak, Research Scholar, MIT World Peace University</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <div class="container">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message or Requirement" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Psych Logie</h2>
+        <p>Supporting academic research & mental wellness — one step at a time.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <!-- Home Section with Background Image -->
-  <section id="home" class="home-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1>Empowering Minds, Transforming Lives</h1>
-          <!-- Transparent White Background for Text -->
-          <div class="highlight-text">
-            <p class="lead">DR Vijayalakshmi<br>
-              M.Sc Psychology | M.Phil Clinical Psychology | Ph.D. Psychology | Certified Child Counselor | Cognitive Behavior Therapist | Behavior and Occupational Therapy Specialist</p>
-          </div>
-          <a href="#contact" class="btn btn-primary btn-lg">Join Now</a>
+  
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><img src="icons/icons8-facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="icons/icons8-twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="icons/icons8-linkedin.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="icons/icons8-mail.svg" alt="Mail"></a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2 class="text-center mb-4">About Us</h2>
-      <div class="row align-items-center">
-        <!-- Smaller Image on the Left -->
-        <div class="col-md-4">
-          <img src="images/therapist-about.avif" alt="Therapist" class="img-fluid rounded smaller-image">
-        </div>
-        <!-- Text on the Right -->
-        <div class="col-md-8">
-          <h3>DR Vijayalakshmi</h3>
-          <p class="lead small-text">M.Sc Psychology | M.Phil Clinical Psychology | Ph.D. Psychology | Certified Child Counselor | Cognitive Behavior Therapist | Behavior and Occupational Therapy Specialist</p>
-          <p class="small-text">
-            With over 15 years of experience in the field of psychology, DR Vijayalakshmi is dedicated to helping individuals and families achieve mental well-being and personal growth. Her approach is compassionate, evidence-based, and tailored to meet the unique needs of each client.
-          </p>
-          <h4 class="mt-4">What We Do</h4>
-          <p class="small-text">
-            At <strong>Psych Logie</strong>, we provide a wide range of psychological services, including:
-          </p>
-          <ul class="small-text">
-            <li><strong>Therapy Consultations:</strong> Individual therapy, Cognitive Behavior Therapy (CBT), and Behavior and Occupational Therapy for all ages.</li>
-            <li><strong>Stress Management:</strong> Counseling for anxiety, depression, and work-life balance.</li>
-            <li><strong>Family Counseling:</strong> Improving communication and resolving conflicts within families.</li>
-            <li><strong>Child Behavior Counseling:</strong> Support for children with behavioral issues, emotional regulation, and developmental delays.</li>
-            <li><strong>Academic Support:</strong> Assistance with thesis writing, research proposals, and data analysis.</li>
-          </ul>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Psych Logie. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Services Section with Background Image -->
-  <section id="services" class="services-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Our Services</h2>
-      <div class="row">
-        <!-- Therapy Consultations -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Therapy Consultations</h5>
-              <p class="card-text">Individual therapy, Cognitive Behavior Therapy (CBT), and Behavior and Occupational Therapy for all ages.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Stress Management for Adults -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Stress Management for Adults</h5>
-              <p class="card-text">Counseling for anxiety, depression, and work-life balance.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Family Counseling -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Family Counseling</h5>
-              <p class="card-text">Improving communication and resolving conflicts within families.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Child Behavior Counseling -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Child Behavior Counseling</h5>
-              <p class="card-text">Support for children with behavioral issues, emotional regulation, and developmental delays.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Academic Support Services -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Academic Support Services</h5>
-              <p class="card-text">Assistance with thesis writing, research proposals, and data analysis.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Workshops and Training -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Workshops and Training</h5>
-              <p class="card-text">Mental health awareness programs and skill-building workshops for parents and educators.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Special Offer Section -->
-  <section id="special-offer" class="special-offer-section bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">For College Students</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="images/student-offer.webp" alt="Special Offer" class="img-fluid rounded">
-        </div>
-        <div class="col-md-6">
-          <p class="lead small-text">
-            We are offering on the following services for undergraduate (UG) and postgraduate (PG) students:
-          </p>
-          <ul class="small-text">
-            <li><strong>Data Collection:</strong> Assistance with collecting survey responses and research data.</li>
-            <li><strong>Data Analysis:</strong> Statistical and qualitative analysis of research data.</li>
-            <li><strong>Dissertation Writing:</strong> Help with structuring and writing dissertations.</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-lg">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Contact Us</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h4>Contact Info</h4>
-          <p><strong>Email:</strong> therapistsite31@gmail.com</p>
-          <p><strong>WhatsApp:</strong> +91 9385985776</p>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.801837867947!2d80.231415315346!3d12.908519519798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c7e1f7f3f3f%3A0x3a525c7e1f7f3f3f!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1633083083083!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 Psych Logie. All rights reserved.</p>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    for (let i = 0; i < 15; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 50 + 'px';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.animationDelay = (Math.random() * 3) + 's';
+      document.querySelector('.header').appendChild(star);
+    }
+  </script>
+  
 </body>
 </html>

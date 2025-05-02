@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Psych Logie</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">Psych Logie</h1>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>        
+              <li class="dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown-menu">
+                  
+                  <!-- Sub-dropdown for Research Services -->
+                  <li class="sub-dropdown">
+                    <a href="#">Research Services</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Research Design</a></li>
+                      <li><a href="#">Data Collection</a></li>
+                      <li><a href="#">Data Analysis</a></li>
+                      <li><a href="#">Writing & Editing</a></li>
+                      <li><a href="#">Proofreading</a></li>
+                      <li><a href="#">Formatting & Styling</a></li>
+                      <li><a href="#">Plagiarism Checking</a></li>
+                    </ul>
+                  </li>
+              
+                  <!-- Sub-dropdown for Publication -->
+                  <li class="sub-dropdown">
+                    <a href="#">Publication & Presentation</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Content Writing</a></li>
+                      <li><a href="#">Data Visualization</a></li>
+                      <li><a href="#">Publication Support</a></li>
+                      <li><a href="#">Research Paper Presentation</a></li>
+                    </ul>
+                  </li>
+              
+                </ul>
+              </li>          
+              </li>          
+              <li><a href="#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>        
+          </nav>    
+        </div>
+      </header>
+
+      <section class="page-banner" style="background-image: url('images/hero2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 80px 20px; color: white; text-align: center;">
+        <div class="container">
+          <h2 style="font-size: 3rem; margin-bottom: 10px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">Our Services</h2>
+          <p style="font-size: 1.2rem; max-width: 700px; margin: auto; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+            Explore the full range of support we offer to empower your academic and research journey.
+          </p>
+        </div>
+      </section>      
+    
+
+      <section class="services-list">
+        <div class="container">
+          <div class="service-card">
+            <h3>Research Services</h3>
+            <div class="card-list">
+              <div class="card">
+        <h4>Research Design</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Data Collection</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Data Analysis</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Writing & Editing</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Proofreading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Formatting & Styling</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Plagiarism Checking</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+            </div>
+          </div>
+      
+          <div class="service-card">
+            <h3>Publication & Presentation</h3>
+            <div class="card-list">
+              <div class="card">
+        <h4>Content Writing</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Data Visualization</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Publication Support</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+              <div class="card">
+        <h4>Research Paper Presentation</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam vel orci posuere suscipit.</p>
+      </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <script>
+    for (let i = 0; i < 15; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 50 + 'px';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.animationDelay = (Math.random() * 3) + 's';
+      document.querySelector('.header').appendChild(star);
+    }
+  </script>
+
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Psych Logie</h2>
+        <p>Supporting academic research & mental wellness — one step at a time.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#"><img src="icons/icons8-facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="icons/icons8-twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="icons/icons8-linkedin.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="icons/icons8-mail.svg" alt="Mail"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Psych Logie. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

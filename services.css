@@ -1,0 +1,70 @@
+/* Services Page Styles */
+
+.page-banner {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .page-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .page-banner p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .services-list {
+    padding: 60px 20px;
+    background: #f5f8fc;
+  }
+  
+  /* Container holding all service cards */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Each individual card */
+  .card {
+    background-color: #f4f8fc;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Card Title */
+  .card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0e1e40;
+  }
+  
+  /* Card Description */
+  .card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .services-list .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
