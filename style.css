@@ -601,4 +601,15 @@ body {
     color: #888;
     font-size: 13px;
   }
+.site-footer .footer-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.footer-expert p { margin: 4px 0; }
+.footer-expert h3 { margin-bottom: 8px; }
+@media (max-width: 800px) {
+  .site-footer .footer-container { grid-template-columns: 1fr; }
+}
+
   
